@@ -6,13 +6,191 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="6"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/TitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#8041FF">
+
+            <Button
+                android:id="@+id/btn_browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/border_white"
+                android:padding="0dp"
+                android:text="둘러보기"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="52dp"
+                android:text="라일락 스토리"
+                android:textColor="#FFFFFF"
+                android:textSize="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/Inputs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/TextInputs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="30dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="80dp"
+                    android:background="@drawable/border"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#AA88FC" />
+
+                <EditText
+                    android:id="@+id/edt_passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginEnd="80dp"
+                    android:background="@drawable/border"
+                    android:hint="Password"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:textColorHint="#AA88FC" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ButtonInputs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/Buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_button"
+                        android:text="로그인"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btn_register"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_button"
+                        android:text="회원가입"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="10dp"
+                    android:background="#00FFFFFF"
+                    android:text="비밀번호 찾기"
+                    android:textColor="#AA88FC" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/SiteInputs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_facebook"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/border"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="true"
+                        android:padding="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/icon_facebook" />
+
+                    <ImageButton
+                        android:id="@+id/btn_naver"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/border"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="true"
+                        android:padding="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/icon_naver" />
+
+                    <ImageButton
+                        android:id="@+id/btn_google"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/border"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="true"
+                        android:padding="30dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/icon_google" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
