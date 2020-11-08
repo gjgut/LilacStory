@@ -11,28 +11,28 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/MainColor_Pink">
+        android:background="@color/MainColor_Purple">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="16dp"
             android:text="회원가입"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
             android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/abc_vector_test" />
@@ -95,7 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
-                    android:background="@drawable/border_editText"
+                    android:background="@drawable/border_editrext"
                     android:ems="10"
                     android:hint="Nickname"
                     android:inputType="textPersonName"
@@ -136,11 +136,11 @@
                     android:orientation="vertical"></LinearLayout>
 
                 <EditText
-                    android:id="@+id/edt_Email2"
+                    android:id="@+id/edt_Email"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
-                    android:background="@drawable/border_editText"
+                    android:background="@drawable/border_editrext"
                     android:ems="10"
                     android:hint="Email"
                     android:inputType="textPersonName"
@@ -180,11 +180,11 @@
                     android:orientation="vertical"></LinearLayout>
 
                 <EditText
-                    android:id="@+id/edt_Email3"
+                    android:id="@+id/edt_passwd"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
-                    android:background="@drawable/border_editText"
+                    android:background="@drawable/border_editrext"
                     android:ems="10"
                     android:hint="Password"
                     android:inputType="textPersonName"
@@ -224,11 +224,11 @@
                     android:orientation="vertical"></LinearLayout>
 
                 <EditText
-                    android:id="@+id/edt_Email4"
+                    android:id="@+id/edt_checkpasswd"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
-                    android:background="@drawable/border_editText"
+                    android:background="@drawable/border_editrext"
                     android:ems="10"
                     android:hint="PasswordCheck"
                     android:inputType="textPersonName"
@@ -243,11 +243,11 @@
                 android:orientation="vertical"></LinearLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_register_submit"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="4"
-                android:background="@color/MainColor_Pink"
+                android:background="@color/MainColor_Purple"
                 android:text="회원가입 하기"
                 android:textColor="#FFFFFF" />
 
