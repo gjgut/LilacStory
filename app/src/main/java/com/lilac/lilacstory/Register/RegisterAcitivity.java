@@ -13,11 +13,13 @@ import com.lilac.lilacstory.R;
 
 public class RegisterAcitivity extends AppCompatActivity implements Contract.View {
     EditText edt_Name,edt_Email,edt_Passwd,edt_CheckPasswd;
+    Contract.Presenter presenter;
     Button btn_Register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        presenter = new RegisterPresenter(this);
         initializeView();
         initializeViewListener();
     }
@@ -43,7 +45,7 @@ public class RegisterAcitivity extends AppCompatActivity implements Contract.Vie
         btn_Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MoveToLoginActivity();
+                presenter.RegisterUserData(edt_Email.getText().toString(),edt_Passwd.getText().toString());
             }
         });
     }
