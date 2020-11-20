@@ -33,8 +33,7 @@ public class RegisterAcitivity extends AppCompatActivity implements Contract.Vie
     public void initializeView() {
         setContentView(R.layout.activity_register);
         edt_Name = findViewById(R.id.edt_Nickname);
-        edt_Email = findViewById(R.id.edt_Email);
-        edt_Passwd = findViewById(R.id.edt_passwd);
+        edt_Email = findViewById(R.id.edt_Email); edt_Passwd = findViewById(R.id.edt_passwd);
         edt_CheckPasswd = findViewById(R.id.edt_checkpasswd);
 
         btn_Register = findViewById(R.id.btn_register_submit);
