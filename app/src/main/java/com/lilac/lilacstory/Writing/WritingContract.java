@@ -9,5 +9,6 @@ public class WritingContract {
     interface Presenter
     {
 
+
     }
 }
