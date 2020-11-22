@@ -31,6 +31,7 @@ public class WritingActivityTest {
     @Test
     public void changeText()
     {
+
         Espresso.onView(ViewMatchers.withId(R.id.edt_writing))
                 .perform(ViewActions.typeText("Hello World!"),ViewActions.closeSoftKeyboard());
         Espresso.onView(ViewMatchers.withId(R.id.edt_writing))
