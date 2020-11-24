@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -9,10 +10,37 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="나눔스퀘어" />
+        android:text="나눔스퀘어"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
 
-    <LinearLayout
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:orientation="horizontal"></LinearLayout>
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/img_btn_star"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="right|top"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_void_star" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="마음을 담다, Estory."
+            android:textColor="#000000"
+            android:textSize="10sp" />
+    </FrameLayout>
+
 </LinearLayout>

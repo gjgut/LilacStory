@@ -5,6 +5,8 @@ public class WritingContract {
     {
         void initializeView();
         void initializeListener();
+        int getKeyBoardHeight();
+        void DisplayBottomBar();
     }
     interface Presenter
     {
