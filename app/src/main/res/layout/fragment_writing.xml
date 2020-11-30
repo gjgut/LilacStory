@@ -168,7 +168,7 @@
                     android:cropToPadding="true"
                     android:padding="12dp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/icon_text_alignment" />
+                    app:srcCompat="@drawable/icon_text_align_center" />
 
             </LinearLayout>
 
@@ -291,7 +291,7 @@
                 </LinearLayout>
 
                 <SeekBar
-                    android:id="@+id/seekBar"
+                    android:id="@+id/seekBar_text_size"
                     style="@style/Widget.AppCompat.SeekBar"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -317,7 +317,7 @@
                         app:srcCompat="@drawable/icon_letter_space" />
 
                     <EditText
-                        android:id="@+id/editText"
+                        android:id="@+id/edt_letter_space"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -337,7 +337,7 @@
                         app:srcCompat="@drawable/icon_row_space" />
 
                     <EditText
-                        android:id="@+id/editText2"
+                        android:id="@+id/edt_line_space"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

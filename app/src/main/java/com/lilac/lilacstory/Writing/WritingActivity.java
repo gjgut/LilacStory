@@ -8,11 +8,13 @@ import android.view.ViewTreeObserver;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintSet;
 
 import com.lilac.lilacstory.R;
 
@@ -20,9 +22,10 @@ public class WritingActivity extends AppCompatActivity implements WritingContrac
     EditText WritingText;
     View rootView;
     ImageButton txt_font_style,txt_font_size,txt_align,btn_thumbnail;
+    LinearLayout writing_font_style;
+    FrameLayout writing_font_size;
     Button btn_complete,btn_save;
 
-    LinearLayout bottomBar_content;
     int viewHeight = -1;
 
     @Override
@@ -42,11 +45,16 @@ public class WritingActivity extends AppCompatActivity implements WritingContrac
         txt_font_size = findViewById(R.id.img_btn_font_size);
         txt_align = findViewById(R.id.img_btn_align);
 
+        txt_font_style.setTag(R.id.img_btn_font_style);
+        txt_font_size.setTag(R.id.img_btn_font_size);
+        txt_align.setTag(R.drawable.icon_text_align_center);
+
         btn_save = findViewById(R.id.btn_writing_save);
         btn_complete = findViewById(R.id.btn_writing_complete);
         btn_thumbnail = findViewById(R.id.btn_writing_thumbnail);
 
-        bottomBar_content = findViewById(R.id.writing_bar_font_style);
+        writing_font_style = findViewById(R.id.writing_bar_font_style);
+        writing_font_size = findViewById(R.id.writing_bar_font_size);
 
     }
 
@@ -71,7 +79,7 @@ public class WritingActivity extends AppCompatActivity implements WritingContrac
         WritingText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View view, boolean b) {
-                bottomBar_content.setVisibility(View.VISIBLE);
+                writing_font_style.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -82,7 +90,10 @@ public class WritingActivity extends AppCompatActivity implements WritingContrac
         switch(v.getId())
         {
             case R.id.img_btn_font_style:
-                DisplayBottomBar();
+                DisplayBottomBar(writing_font_style);
+                break;
+            case R.id.img_btn_font_size:
+                DisplayBottomBar(writing_font_size);
                 break;
         }
     }
@@ -100,9 +111,13 @@ public class WritingActivity extends AppCompatActivity implements WritingContrac
         return keyboardHeight;
     }
 
+
     @Override
-    public void DisplayBottomBar() {
+    public void DisplayBottomBar(View v) {
+        writing_font_size.setVisibility(View.GONE);
+        writing_font_style.setVisibility(View.GONE);
         InputMethodManager inputMethodManager = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         inputMethodManager.hideSoftInputFromWindow(WritingText.getWindowToken(),0);
+        v.setVisibility(View.VISIBLE);
     }
 }
