@@ -1,0 +1,84 @@
+[33mcommit 6f8ca9b9bf5a9cb91fd6c833a5bc45557e0c24fa[m[33m ([m[1;36mHEAD -> [m[1;32mwriting[m[33m)[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Tue Nov 24 22:21:59 2020 +0900
+
+    폰트 스타일 화면 & 폰트 크기 화면 완성
+
+[33mcommit ef1cc654d2e3b5ce392cc1305f2af61dd71d768d[m[33m ([m[1;32mmaster[m[33m)[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Sun Nov 22 21:36:18 2020 +0900
+
+    글쓰기 화면에 하단 슬라이딩 드로어 레이아웃 추가
+
+[33mcommit 968915af3fa0013ea4e193f300b169d6749bff4e[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Sat Nov 21 21:59:21 2020 +0900
+
+    WritingActivity 첫 테스트 작성
+
+[33mcommit a55db703c9ad242464ffc10dd3d4dea155361351[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Sat Nov 21 00:04:43 2020 +0900
+
+    Writing 브랜치 개설 및 Contract 작성
+
+[33mcommit 927ceb8958abe48b83a74436616e234cad707624[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Fri Nov 20 23:42:49 2020 +0900
+
+    Writing 브랜치 개설 후 Contract 작성
+
+[33mcommit a5dcfbe4569273a2bf7004f6900cd5e4bcf7d816[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Wed Nov 11 23:36:22 2020 +0900
+
+    MVP 패턴 모델 추가 및 싱글턴 패턴 적용
+
+[33mcommit 622e8805c427ab1647d12f39439477d49bac1cbe[m
+Merge: 8b027fc f024d4a
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Mon Nov 9 22:58:21 2020 +0900
+
+    Merge branch 'master' of https://github.com/gjgut/LilacStory
+
+[33mcommit 8b027fc84bdb73a9010d9a91801ff7c2ec63f756[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Mon Nov 9 22:49:43 2020 +0900
+
+    에스프레소 세팅 및 테스트
+
+[33mcommit f024d4a4f2618fa2d66d214cd210bb9858876d02[m
+Author: gjgut <49982072+gjgut@users.noreply.github.com>
+Date:   Sun Nov 8 19:56:42 2020 +0900
+
+    Create README.md
+
+[33mcommit e061eb15b19eaeaeef046b77eb6510253e29de8c[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Sun Nov 8 19:53:49 2020 +0900
+
+    RegisterActivity에 MVC 패턴 적용2
+
+[33mcommit 6e75bf5d11f7b48a60a150707598c6c47060ef2e[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Sun Nov 8 19:49:05 2020 +0900
+
+    RegisterActivity에 MVC 패턴 적용
+
+[33mcommit 013bef5f0045c8bb34b5254875e74d7d88418ff7[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Sat Nov 7 18:35:19 2020 +0900
+
+    회원가입 레이아웃 제작
+
+[33mcommit e0e9f1a20e9d3be5c2754e1851755e58a170966a[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Thu Nov 5 22:57:03 2020 +0900
+
+    로그인 레이아웃 작성
+
+[33mcommit 8d6a1129bb4218973fdcd5b9f5a1b731ac70bc90[m
+Author: gjgut <gjgustjd70@gmail.com>
+Date:   Wed Nov 4 22:23:34 2020 +0900
+
+    initial commit
